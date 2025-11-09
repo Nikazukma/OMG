@@ -1,7 +1,7 @@
-jekyll-gulp-sass-browser-sync
+jekyll-gulp-sass-browser-sync + LinkedIn Agent
 =============================
 
-A starter project including full setup for Jekyll, GulpJS, SASS, AutoPrefixer &amp; BrowserSync
+A starter project including full setup for Jekyll, GulpJS, SASS, AutoPrefixer &amp; BrowserSync, plus an automated LinkedIn posting agent
 
 Here's a 1.5min [screencast](http://quick.as/pvrslgx) showing what you get.
 
@@ -35,6 +35,33 @@ $ gulp
 **jekyll**
 
 As this is just a Jekyll project, you can use any of the commands listed in their [docs](http://jekyllrb.com/docs/usage/)
+
+## LinkedIn Posting Agent
+
+This project includes an automated LinkedIn posting agent that allows you to post updates, articles, and images to LinkedIn.
+
+### Quick Start
+
+1. Set up your LinkedIn API credentials:
+```shell
+cp .env.example .env
+# Edit .env with your LinkedIn credentials
+```
+
+2. Install dependencies:
+```shell
+npm install
+```
+
+3. Post to LinkedIn:
+```shell
+# Post a text update
+npm run linkedin:post -- --text "Hello LinkedIn!"
+
+# For full documentation, see LINKEDIN-AGENT-README.md
+```
+
+For complete documentation on the LinkedIn agent, including how to get API credentials, post articles, images, and schedule posts, see [LINKEDIN-AGENT-README.md](LINKEDIN-AGENT-README.md).
 
 ## Deploy with Gulp
 
